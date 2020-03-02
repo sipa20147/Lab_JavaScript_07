@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Самостоятельная работа</title>
+	
+		<script>
+			function open1(){
+			var OpenWin = window.open('', 'newwin', config='height=300,width=500,left=100,top=150,status=yes,location=yes,toolbar=no,menubar=yes');
+			OpenWin.document.write("<html>");
+			OpenWin.document.write("<title>Новое окно</title>");
+			OpenWin.document.write("<body style='color:white' BGCOLOR = 'blue'>");
+			OpenWin.document.write("<center>");
+			OpenWin.document.write("<font size=+3>Наше новое окно</font><p>");
+			OpenWin.document.write("<a style='color:white' href = 'http://www.exam.by' target = 'main'>Эта ссылка откроется в новом окне</a></p>");
+			OpenWin.document.write("<a style='color:white' href = 'http://www.intuit.ru' target = 'main'>Эта ссылка ведёт на сайт intuit.ru</a></p>");
+			OpenWin.document.write("<a style='color:white' href = 'http://www.tut.by' target = 'main'>Эта ссылка ведёт на сайт tut.by</a></p>");
+			OpenWin.document.write("<p><HR WIDTH = '60%'><p>");
+			OpenWin.document.write("<a style='color:white' href = '' onClick = 'self.close()'>Эта ссылка закроет окно</a></p>");
+			OpenWin.document.write("</center>");
+			OpenWin.document.write("</body></html>");
+			}
+		</script>
+	</head>
+	<body>
+			<button	onClick = "open1()">Запуск страницы в новом окне</button>
+	</body>
+</html>
